@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="栃木県eスポーツ部向けのLeague of Legends初心者ガイド。基本ルール、ロール、チャンピオン診断、知識クイズを学べます。">
+  <title>LoL Beginner's Guide | 栃木県eスポーツ部</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <script src="js/champion-diagnosis.js" defer></script>
+  <script src="js/knowledge-quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="ホームへ">
+      <span class="brand-mark">LoL</span>
+      <span><strong>BEGINNER'S GUIDE</strong><small>栃木県eスポーツ部</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">メニュー ☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="メインメニュー">
+      <a href="#basics">ゲームの基本</a>
+      <a href="#roles">5つのロール</a>
+      <a href="#diagnosis">チャンピオン診断</a>
+      <a href="#quiz">知識クイズ</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">LEARN THE FUNDAMENTALS</p>
+        <h1>ルールを知る。<br><span>役割を知る。</span><br>試合の流れを理解する。</h1>
+        <p class="hero-lead">LoLを始めたばかりの部員向けに、勝利条件やマップ、5つのロール、基本用語をわかりやすく解説します。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#basics">学習を始める <span aria-hidden="true">→</span></a>
+          <a class="button button-ghost" href="#diagnosis">チャンピオン診断</a>
+        </div>
+        <p class="notice-inline">非公式のファン制作学習サイトです。Riot Gamesとは提携・公認関係にありません。</p>
+      </div>
+      <div class="hero-art" aria-label="ゲームの基本を表すイラスト" role="img">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="map-card">
+          <div class="map-lane lane-top"></div><div class="map-lane lane-mid"></div><div class="map-lane lane-bot"></div>
+          <span class="map-label label-top">TOP</span><span class="map-label label-mid">MID</span><span class="map-label label-bot">BOT</span>
+          <span class="map-core core-blue"></span><span class="map-core core-red"></span>
+          <span class="map-caption">SUMMONER'S RIFT</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-intro">
+      <div class="section-heading">
+        <p class="eyebrow">START HERE</p>
+        <h2>まずは、全体像をつかもう。</h2>
+        <p>細かい操作や最新の強さを覚える前に、ゲームの仕組みを理解することが上達への第一歩です。</p>
+      </div>
+      <div class="feature-grid">
+        <a class="feature-card" href="#basics">
+          <span class="feature-icon">01</span><h3>ゲームの基本</h3>
+          <p>何を目指すゲームなのか、何を集めて強くなるのかを知る。</p><span class="card-link">基本を学ぶ →</span>
+        </a>
+        <a class="feature-card" href="#roles">
+          <span class="feature-icon">02</span><h3>5つのロール</h3>
+          <p>チームの中で自分が担当する役割と、味方との協力を理解する。</p><span class="card-link">役割を知る →</span>
+        </a>
+        <a class="feature-card" href="#diagnosis">
+          <span class="feature-icon">03</span><h3>チャンピオン診断</h3>
+          <p>好きな戦い方や操作の好みから、練習候補を見つける。</p><span class="card-link">診断してみる →</span>
+        </a>
+        <a class="feature-card" href="#quiz">
+          <span class="feature-icon">04</span><h3>知識クイズ</h3>
+          <p>学んだ内容をクイズで振り返り、理解できているか確かめる。</p><span class="card-link">挑戦する →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="basics" class="section section-dark">
+      <div class="section-heading">
+        <p class="eyebrow">01 / THE BASICS</p>
+        <h2>LoLの基本を学ぶ</h2>
+        <p>細かい数値ではなく、ゲームを理解するための土台を押さえましょう。</p>
+      </div>
+      <div class="lesson-grid">
+        <article class="lesson-card lesson-card-wide">
+          <div class="lesson-number">A</div>
+          <div><h3>勝利条件は、敵のネクサスを破壊すること</h3>
+            <p>LoLは5人対5人のチーム戦です。相手チームの拠点にあるネクサスを破壊すると勝利します。敵チャンピオンを倒すこと自体が最終目的ではなく、タワーなどを攻略してネクサスへ道を切り開くことが重要です。</p>
+          </div>
+        </article>
+        <article class="lesson-card">
+          <div class="lesson-number">B</div><h3>ミニオンとゴールド</h3>
+          <p>レーンに定期的に出現するミニオンを倒すと、主にゴールドを得られます。ゴールドはアイテム購入につながり、チャンピオンを強化します。近くで経験値を得ることも、レベルアップに重要です。</p>
+        </article>
+        <article class="lesson-card">
+          <div class="lesson-number">C</div><h3>経験値とレベル</h3>
+          <p>経験値を得るとレベルが上がり、スキルを強化できます。相手よりレベルや装備が進んでいると戦闘で有利になりやすいため、無理な戦闘だけでなく、安定して成長することも大切です。</p>
+        </article>
+        <article class="lesson-card">
+          <div class="lesson-number">D</div><h3>タワーとレーン</h3>
+          <p>トップ、ミッド、ボットの3つのレーンにはタワーがあり、敵の進行を妨げます。ミニオンと協力してタワーを攻略し、相手の陣地へ進みます。タワーの近くでは、位置取りやミニオンの状況も意識しましょう。</p>
+        </article>
+        <article class="lesson-card">
+          <div class="lesson-number">E</div><h3>視界と情報</h3>
+          <p>敵が見えていない場所には危険が潜んでいる可能性があります。ワードなどで視界を確保し、ミニマップを見て敵の位置を推測することが重要です。視界は安全な移動や目標物の確保にも役立ちます。</p>
+        </article>
+        <article class="lesson-card lesson-card-wide">
+          <div class="lesson-number">F</div><div><h3>オブジェクトとチームの目的</h3>
+            <p>ドラゴンやバロンなどの中立オブジェクトは、チームに有利な効果や試合を動かす機会をもたらします。出現時刻や効果などの細かな仕様は変更されることがありますが、「味方と準備し、視界を確保し、人数や位置を見て判断する」という考え方は幅広い場面で役立ちます。</p>
+          </div>
+        </article>
+      </div>
+      <div class="callout"><strong>覚えておきたい考え方</strong><p>キルを取ることだけが目的ではありません。得た有利をタワーやオブジェクトにつなげ、最終的にネクサスの破壊を目指します。</p></div>
+    </section>
+
+    <section id="roles" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / FIVE ROLES</p>
+        <h2>5つのロールを理解する</h2>
+        <p>ロールはチーム内での主な担当です。チャンピオンによって例外はありますが、まずは基本的な役割をつかみましょう。</p>
+      </div>
+      <div class="roles-grid">
+        <article class="role-card role-top"><div class="role-topline"><span class="role-symbol">T</span><span class="role-tag">SOLO LANE</span></div><h3>TOP</h3><p class="role-jp">トップ</p><p>主にトップレーンを担当。耐久力のある前衛や、1対1に強いチャンピオンなどが活躍します。相手とのレーン戦に加え、集団戦で前線を作ったり、別レーンを押し進めたりします。</p><div class="role-question"><b>意識すること</b><span>自分のレーンと、試合中盤以降の役割</span></div></article>
+        <article class="role-card role-jg"><div class="role-topline"><span class="role-symbol">J</span><span class="role-tag">MAP CONTROL</span></div><h3>JUNGLE</h3><p class="role-jp">ジャングル</p><p>レーンの間にあるジャングルを回り、モンスターを倒して成長します。各レーンを助けるガンクや、ドラゴンなどのオブジェクトを巡る判断も重要です。</p><div class="role-question"><b>意識すること</b><span>マップ全体の状況と、次に起こりそうなこと</span></div></article>
+        <article class="role-card role-mid"><div class="role-topline"><span class="role-symbol">M</span><span class="role-tag">SOLO LANE</span></div><h3>MID</h3><p class="role-jp">ミッド</p><p>中央のレーンを担当。相手との戦いに加えて、状況に応じてサイドレーンを助けたり、川やオブジェクト周辺の戦いに参加したりします。</p><div class="role-question"><b>意識すること</b><span>レーンの管理と、他の場所への影響</span></div></article>
+        <article class="role-card role-adc"><div class="role-topline"><span class="role-symbol">A</span><span class="role-tag">BOT LANE</span></div><h3>ADC / BOT</h3><p class="role-jp">ボット（主にマークスマン）</p><p>主にボットレーンでサポートと行動します。通常攻撃などで継続的にダメージを出すチャンピオンが多く、成長してからの集団戦で力を発揮します。</p><div class="role-question"><b>意識すること</b><span>安全な位置からダメージを出し、倒されないこと</span></div></article>
+        <article class="role-card role-sup"><div class="role-topline"><span class="role-symbol">S</span><span class="role-tag">TEAM SUPPORT</span></div><h3>SUPPORT</h3><p class="role-jp">サポート</p><p>ボットレーンで味方を支えます。視界の確保、味方の保護、敵への仕掛け、味方が戦いやすい状況づくりなどが主な仕事です。</p><div class="role-question"><b>意識すること</b><span>味方を助ける位置取りと、視界・連携</span></div></article>
+      </div>
+      <div class="callout callout-light"><strong>ロールは「固定された性格」ではない</strong><p>同じロールでもチャンピオンや試合状況によって役割は変わります。ここでの説明は、初心者が全体像を理解するための基本です。</p></div>
+    </section>
+
+    <section id="diagnosis" class="section section-accent">
+      <div class="section-heading">
+        <p class="eyebrow">03 / FIND YOUR CHAMPION</p>
+        <h2>チャンピオン診断</h2>
+        <p>好みの戦い方を選んで、練習候補を見つけましょう。診断結果は強さランキングではなく、プレイスタイルとの相性をもとにした提案です。</p>
+      </div>
+      <div class="interactive-panel">
+        <div id="diagnosis-app">
+          <div class="progress-row"><span id="diagnosis-progress-text">質問 1 / 4</span><div class="progress-track"><span id="diagnosis-progress" style="width:25%"></span></div></div>
+          <div id="diagnosis-question" class="question-area" aria-live="polite"></div>
+          <div class="form-actions"><button id="diagnosis-back" class="button button-ghost" disabled>戻る</button><button id="diagnosis-next" class="button button-primary">次へ</button></div>
+          <div id="diagnosis-result" class="result-area" hidden aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">04 / CHECK YOUR KNOWLEDGE</p>
+        <h2>知識クイズ</h2>
+        <p>基本ルールや判断の考え方を確認しましょう。全問終了すると、正答数と解説を確認できます。</p>
+      </div>
+      <div class="interactive-panel quiz-panel">
+        <div class="quiz-toolbar"><span id="quiz-counter">問題 1</span><span id="quiz-score-live">回答済み 0 問</span></div>
+        <div id="quiz-content" aria-live="polite"></div>
+        <div class="form-actions"><button id="quiz-restart" class="button button-ghost" hidden>もう一度挑戦</button><button id="quiz-next" class="button button-primary" disabled>回答する</button></div>
+        <div id="quiz-result" class="result-area" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="glossary" class="section section-soft">
+      <div class="section-heading">
+        <p class="eyebrow">QUICK GLOSSARY</p><h2>まず覚えたい用語</h2>
+        <p>試合中によく聞く言葉を、短く確認できます。</p>
+      </div>
+      <div class="glossary-grid">
+        <details><summary>CS</summary><p>ミニオンなどを倒した数を指す言葉。会話では、ミニオンから得るゴールドやファームの状況を表す文脈でも使われます。</p></details>
+        <details><summary>ガンク</summary><p>ジャングラーなどがレーンに介入し、味方と協力して相手を攻撃すること。</p></details>
+        <details><summary>CC</summary><p>Crowd Controlの略。スタンやスネアなど、敵の移動・行動を制限する効果の総称。</p></details>
+        <details><summary>ウェーブ</summary><p>レーンを進むミニオンの集団。位置や数を管理すると、ゴールド・経験値の獲得や移動のしやすさに影響します。</p></details>
+        <details><summary>エンゲージ</summary><p>味方が戦闘を始めやすい形を作り、集団戦などを仕掛けること。</p></details>
+        <details><summary>ピール</summary><p>敵を妨害するなどして、味方の重要なチャンピオンを守ること。</p></details>
+        <details><summary>ローム</summary><p>自分の担当レーンを一時的に離れ、他のレーンやマップ上の戦いを助けに行くこと。</p></details>
+        <details><summary>視界</summary><p>ワードなどによって、マップ上の場所や敵の位置を把握できる状態。安全な移動や目標物の準備に役立ちます。</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark">LoL</span><div><strong>BEGINNER'S GUIDE</strong><small>栃木県eスポーツ部</small></div></div>
+    <p>本サイトは非公式の学習用ファンサイトです。League of Legendsおよび関連する名称・画像等の権利は各権利者に帰属します。</p>
+    <p class="footer-small">ゲームの仕様や用語の使われ方は更新される場合があります。個別の数値・性能ではなく、基本的な考え方の学習を目的としています。</p>
+    <a href="#home" class="back-top">ページ上部へ ↑</a>
+  </footer>
+</body>
+</html>
