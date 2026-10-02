@@ -40,6 +40,45 @@
         { label: "SUP：味方を支援する", value: "SUP" },
         { label: "まだ決まっていない", value: "ANY" }
       ]
+    },
+    {
+      title: "集団戦では、どんな動きができるとうれしい？",
+      hint: "複数の敵と味方が入り乱れる場面を想像してください。",
+      options: [
+        { label: "先に仕掛けて、味方が戦える流れを作る", value: "engage" },
+        { label: "危険な敵を見つけて、行動を止める", value: "pick" },
+        { label: "距離を保ち、攻撃を続けてダメージを出す", value: "dps" },
+        { label: "味方を守ったり、回復・強化したりする", value: "protect" }
+      ]
+    },
+    {
+      title: "試合でどんな手応えを感じたい？",
+      hint: "どれも勝利につながる大切な貢献です。",
+      options: [
+        { label: "自分が前に立ち、敵の攻撃を受け止める", value: "frontline" },
+        { label: "一瞬のチャンスで大きなダメージを与える", value: "burst" },
+        { label: "攻撃を当て続け、少しずつ有利を広げる", value: "ranged" },
+        { label: "味方が動きやすいように支援や妨害をする", value: "utility" }
+      ]
+    },
+    {
+      title: "チャンピオンを練習するとき、何を重視したい？",
+      hint: "今の気分に近いものを選んでください。",
+      options: [
+        { label: "まずは基本を覚え、試合全体を見る余裕を作る", value: "easy" },
+        { label: "基本を押さえつつ、少しずつ技術を増やす", value: "medium" },
+        { label: "難しい操作やコンボを練習して極めたい", value: "hard" }
+      ]
+    },
+    {
+      title: "味方と連携するとき、どんな役回りが好み？",
+      hint: "ソロで行動する場面もありますが、得意にしたい貢献を選びましょう。",
+      options: [
+        { label: "味方が動き出す合図を作る", value: "engage" },
+        { label: "味方を狙う敵を追い払い、守る", value: "protect" },
+        { label: "敵の重要なチャンピオンを捕まえる", value: "pick" },
+        { label: "味方の攻撃に合わせて火力を重ねる", value: "dps" }
+      ]
     }
   ];
 
@@ -116,14 +155,22 @@
 
   function scoreChampion(champion) {
     let score = 0;
-    const [style1, style2, difficulty, role] = answers;
+    const [style1, style2, difficulty, role, teamfight, payoff, learning, teamwork] = answers;
+    // 回答ごとに重みを変え、複数の好みが一致する候補を上位にする。
     if (champion.style.includes(style1)) score += 3;
     if (champion.style.includes(style2)) score += 2;
-    if (difficulty === champion.difficulty) score += 2;
+    if (champion.difficulty === difficulty) score += 2;
     if (difficulty === "easy" && champion.difficulty === "medium") score += 1;
     if (difficulty === "medium" && champion.difficulty === "easy") score += 1;
     if (difficulty === "hard" && champion.difficulty === "medium") score += 1;
     if (role === "ANY" || champion.roles.includes(role)) score += role === "ANY" ? 1 : 4;
+    if (champion.style.includes(teamfight)) score += 3;
+    if (champion.style.includes(payoff)) score += 2;
+    if (champion.style.includes(teamwork)) score += 2;
+    if (champion.difficulty === learning) score += 1;
+    if (learning === "easy" && champion.difficulty === "medium") score += 1;
+    if (learning === "medium" && champion.difficulty === "easy") score += 1;
+    if (learning === "hard" && champion.difficulty === "medium") score += 1;
     return score;
   }
 

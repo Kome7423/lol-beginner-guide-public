@@ -1,4 +1,4 @@
-# LoL Beginner's Guide
+# LoL Beginner's Guide（栃木県eスポーツ部向け）
 
 League of Legendsの基本を学ぶための、非公式・初心者向け静的Webサイトです。
 
