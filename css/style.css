@@ -65,7 +65,7 @@ h1 span { color: #a9e1c9; }
 .core-blue { bottom: 12%; left: 13%; background: #77b8e5; }.core-red { top: 12%; right: 13%; background: #d87970; }
 .map-caption { position: absolute; bottom: 7%; left: 50%; transform: translateX(-50%); color: #b7d5c6; font-size: .6rem; letter-spacing: .16em; white-space: nowrap; }
 .section { padding: clamp(3.5rem, 6vw, 6rem) max(5vw, calc((100vw - 1200px)/2)); }
-.section-heading { max-width: 760px; margin-bottom: 2.2rem; }
+.section-heading { max-width: none; margin-bottom: 2.2rem; }
 .section-heading h2 { font-size: clamp(1.8rem, 3.4vw, 2.8rem); line-height: 1.35; letter-spacing: -.04em; margin-bottom: .7rem; }
 .section-heading > p:last-child { color: var(--muted); margin-bottom: 0; }
 .feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
