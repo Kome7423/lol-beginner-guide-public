@@ -177,3 +177,36 @@ h1 span { color: #a9e1c9; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+/* 栃木県庁eスポーツ部員向けメッセージ */
+.club-message {
+  margin: 24px 0;
+  padding: 20px 24px;
+  border: 1px solid rgba(59, 191, 131, 0.35);
+  border-left: 5px solid #3bbf83;
+  border-radius: 10px;
+  background: rgba(59, 191, 131, 0.08);
+  color: #f2f7f4;
+  line-height: 1.8;
+}
+
+/* メッセージの見出し */
+.club-message-title {
+  margin: 0 0 12px;
+  color: #3bbf83;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* メッセージ本文 */
+.club-message p:not(.club-message-title) {
+  margin: 6px 0;
+}
+
+/* スマートフォン向け */
+@media (max-width: 600px) {
+  .club-message {
+    padding: 16px;
+    margin: 20px 0;
+  }
+}
